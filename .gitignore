@@ -1,29 +1,7 @@
-# Python/Venv
-.venv/
-venv/
-env/
-*.pyc
+# Игнор только ненужного
 __pycache__/
-.pytest_cache/
-.coverage
-
-# Django
-*.log
+*.pyc
 db.sqlite3
 media/
 staticfiles/
-
-# IDE/Editor
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Venv-specific (your folders)
-Lib/
-Scripts/
-Include/
-pyvenv.cfg
+venv/
