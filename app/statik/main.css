@@ -1,20 +1,142 @@
+/* Глобальные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6; /* Светлый фон */
+    color: #333;  /* Тёмный цвет текста для контраста */
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Базовые стили для заголовков */
+h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;  /* Заглавные буквы */
+    letter-spacing: 1px;  /* Чуть больше расстояния между буквами */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Контейнер с контентом */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;  /* Белый фон для блока с контентом */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Легкая тень */
+    border-radius: 12px;  /* Закругленные углы */
+}
+
+/* Основной текст */
+p {
+    font-size: 1.1rem;
+    color: #555;  /* Более светлый цвет для текста */
+    margin-bottom: 20px;
+}
+
+/* Заголовок h1 */
+h1 {
+    font-size: 2.8rem; /* Увеличенный размер для h1 */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077b5;  /* Синий акцент */
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Заголовок h2 */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077b5;  /* Темно-синий */
+}
+
+/* Заголовок h3 */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Стили для кнопок */
+button, .cta-btn {
+    background-color: #0077b5;  /* Синий цвет кнопок */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;  /* Закругленные углы */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+button:hover, .cta-btn:hover {
+    background-color: #005f8b;  /* Темный синий на ховере */
+    transform: scale(1.05);  /* Эффект увеличения при наведении */
+}
+
+/* Ссылки */
+a {
+    color: #0077b5;  /* Синий для ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005f8b;  /* Темный синий на ховере */
+}
+
+/* Изображения */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;  /* Закругленные углы у изображений */
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
     body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #272727;
-        }
-        header {
-            color: #f0f0f0ff;
-        }
-        main{
-            color: #f0f0f0ff;
-        }
-        .container {
-            width: 60%;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-        }
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    button, .cta-btn {
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
