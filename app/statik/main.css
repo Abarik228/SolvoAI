@@ -3,10 +3,39 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f4f6; /* Светлый фон */
+    background-color: #e7dde9; /* Светлый фон */
     color: #333;  /* Тёмный цвет текста для контраста */
     line-height: 1.6;
     box-sizing: border-box;
+}
+.fog {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255,255,255,0.35), rgba(255,255,255,0));
+    filter: blur(180px);
+    animation: fogMove 15s infinite alternate ease-in-out;
+    z-index: 0;
+}
+
+.fog2 {
+    position: absolute;
+    bottom: -200px;
+    right: -200px;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(150,230,180,0.38), rgba(255,255,255,0));
+    filter: blur(200px);
+    animation: fogMove2 18s infinite alternate ease-in-out;
+    z-index: 0;
+}
+.container {
+    position: relative;
+    z-index: 10; /* Поверх тумана */
+    text-align: center;
+    margin-top: 120px;
 }
 
 /* Базовые стили для заголовков */
@@ -40,7 +69,7 @@ h1 {
     font-size: 2.8rem; /* Увеличенный размер для h1 */
     text-align: center;
     margin-bottom: 20px;
-    color: #0077b5;  /* Синий акцент */
+    color: #cdcdce;  /* Синий акцент */
     font-family: 'Arial', sans-serif;
     letter-spacing: 1px;
 }
@@ -50,7 +79,7 @@ h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #0077b5;  /* Темно-синий */
+    color: #cdcdce;  /* Темно-синий */
 }
 
 /* Заголовок h3 */
@@ -110,9 +139,6 @@ footer {
 
 /* Адаптивность */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
 
     .container {
         width: 100%;
